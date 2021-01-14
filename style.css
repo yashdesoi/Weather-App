@@ -1,0 +1,86 @@
+:root {
+    font-family: 'Varela Round', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: paleturquoise;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+label {
+    display: inline-block;
+    font-size: 14px;
+}
+
+input {
+    display: block;
+    margin: 3px auto;
+    width: 350px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: rgb(110, 110, 110);
+    font-family: inherit;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(226, 109, 109);
+}
+
+.card {
+    width: 310px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.5);
+    background-color: white;
+    display: none;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 300px;
+    background-image: url(http://via.placeholder.com/400x300);
+    background-size: cover;
+    background-position: center;
+}
+
+.card > img {
+    width: 70px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    top: calc(300px - calc(70px / 2));
+    left: calc(calc(310px / 2) - calc(70px / 2));
+}
+
+.details {
+    padding: 10px;
+}
+
+.city-name {
+    margin: 38px 0 15px 0;
+    font-size: 22px;
+}
+
+.temperature {
+    margin: 15px 0 0 0;
+    font-size: 40px;
+}
+
+.message {
+    color: red;
+    display: none;
+}
+

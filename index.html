@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Weather App</h1>
+
+    <form name="citySearch" autocomplete="off">
+        <label for="city">
+            Enter a location for weather information
+            <input type="text" name="city" id="city">
+        </label>
+    </form>
+
+    <div class="card">
+        <div class="image"></div>
+        <img src="" alt="Weather icon">
+        <div class="icon"></div>
+        <div class="details">
+            <h5 class="city-name">City Name</h5>
+            <div class="weather-condition">Weather Condition</div>
+            <div class="temperature">
+                <span>Temp</span>
+                <span>&deg;C</span>
+            </div>
+        </div>
+    </div>
+    <p class="message">Error :(</p>
+    
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
