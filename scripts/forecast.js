@@ -4,7 +4,7 @@ const apiKey = 'sD7OoqRUgWiw8rA35GuqTs9youWyGpEm';
 
 // Locations API --> Text Search --> City Search
 const getCity = async function(city) {
-    const url = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const url = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     const queryString = `?apikey=${apiKey}&q=${city}`;
 
     const response = await fetch(url + queryString);
@@ -16,7 +16,7 @@ const getCity = async function(city) {
 
 // Current Conditions API --> Current Conditions --> Current Conditions
 const getWeather = async function(cityKey) {
-    const url = `http://dataservice.accuweather.com/currentconditions/v1/${cityKey}`;
+    const url = `https://dataservice.accuweather.com/currentconditions/v1/${cityKey}`;
     const queryString = `?apikey=${apiKey}`;
 
     const response = await fetch(url + queryString);
