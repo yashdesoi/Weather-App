@@ -16,14 +16,18 @@ h1 {
 }
 
 label {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 14px;
 }
 
 input {
     display: block;
-    margin: 3px auto;
-    width: 350px;
+    margin: 3px 0;
+    min-width: 0;
+    max-width: 350px;
+    width: 100%;
     padding: 5px;
     border: 1px solid gray;
     border-radius: 3px;
@@ -38,7 +42,8 @@ input:focus {
 }
 
 .card {
-    width: 310px;
+    max-width: 310px;
+    width: 100%;
     margin: 20px auto;
     border-radius: 10px;
     overflow: hidden;
@@ -62,7 +67,9 @@ input:focus {
     background-color: yellow;
     position: absolute;
     top: calc(300px - calc(70px / 2));
-    left: calc(calc(310px / 2) - calc(70px / 2));
+    margin: auto;
+    right: 0;
+    left: 0;
 }
 
 .details {
